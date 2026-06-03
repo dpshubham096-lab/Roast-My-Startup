@@ -1,0 +1,95 @@
+{
+  "project_name": "Roast My Startup",
+  "theme": "dark",
+  "archetype": "Archetype 5: Luxury / Premium Tech",
+  "archetype_adaptation": "Adapted for a high-energy 'Founder Edge' vibe. It blends cinematic dark mode (Notion/Linear) with striking neon orange highlights to represent the 'roast' (fire/heat).",
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Manrope",
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl tracking-tighter font-black",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base leading-relaxed text-[#94A3B8]",
+      "labels": "text-xs tracking-[0.2em] uppercase font-bold text-[#FFB703]"
+    },
+    "font_install_instructions": "Add Google Fonts links for Outfit and Manrope in public/index.html or import in index.css. Apply to Tailwind config font family."
+  },
+  "colors": {
+    "background_primary": "#0F1117",
+    "background_secondary": "#161A22",
+    "accent_primary": "#FF6B35",
+    "accent_secondary": "#FFB703",
+    "accent_support": "#FF7849",
+    "success": "#22C55E",
+    "text_primary": "#F5F7FA",
+    "text_secondary": "#94A3B8",
+    "border_color": "rgba(255, 255, 255, 0.1)"
+  },
+  "tailwind_config_instructions": {
+    "colors": "Override default tailwind colors to use the custom hex codes provided above. Use them explicitly for background, foreground, primary, etc.",
+    "content_paths": "Ensure content array includes './src/**/*.{js,jsx}'"
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy with intense contrast. Elements must breathe.",
+    "bento_grid": "MODE A: TETRIS GRID for Roast Results. grid-cols-1 md:grid-cols-12 gap-6 or gap-8. Mix tall and wide cards.",
+    "card_padding": "Use p-8 or p-12 for premium feel inside cards.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+  },
+  "surface_strategies": {
+    "hero": "Cinematic and minimal. Use the fire sparks background image with a heavy bg-[#0F1117]/80 overlay. Centralized text focus with bold Typography.",
+    "cards": "Linear-style Glassmorphism & Grid Borders. Use background `#161A22` with border `border-white/10`. No heavy shadows; use 1px stroke to define shapes.",
+    "lead_capture_wall": "Heavy Glassmorphism: `backdrop-blur-2xl bg-[#0F1117]/80`. 1px delicate inner stroke `border-white/20`. Must obscure the results completely behind it.",
+    "roast_meter": "Neon glow using `#FF6B35` to `#FFB703` gradient. Should feel alive and 'hot'."
+  },
+  "components": {
+    "buttons": "Primary: Solid `bg-[#FF6B35]` with hover `bg-[#FF7849]`, text `#F5F7FA`. Secondary: Glassy `bg-white/5` border `border-white/10`. MUST have explicit hover states.",
+    "forms": "Shadcn heavily customized. Input background `#0F1117`, border `border-white/10`, focus state `focus:ring-2 focus:ring-[#FF6B35] focus:border-transparent`.",
+    "bento_cards": "Custom div structures using `rounded-2xl`, `bg-[#161A22]`, `border border-white/10`, and `overflow-hidden`. Do not use default Shadcn Card if it feels too boxy.",
+    "icons": "Use Phosphor Icons (@phosphor-icons/react) with duotone weight for a premium tech feel.",
+    "testing": "CRITICAL: All interactive and key informational elements MUST include a `data-testid` attribute (e.g., `data-testid=\"roast-submit-button\"`)."
+  },
+  "animations": {
+    "hover": "Slight lift `-translate-y-1` and `shadow-[0_8px_32px_rgba(255,107,53,0.15)]` on interactive cards.",
+    "score_meter": "Animate width from 0% to calculated percentage using framer-motion.",
+    "page_load": "Fade up entrance (`y: 20, opacity: 0` to `y: 0, opacity: 1`) staggered for bento grid children."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1605254252017-c84820fe9913?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxmaXJlJTIwc3BhcmtzJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzgwMzk1NDYzfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Fire sparks on dark background, use for the 'Roast Arena' hero section with a heavy overlay to ensure text contrast.",
+      "category": "hero"
+    },
+    "abstract_texture": {
+       "url": "https://images.unsplash.com/photo-1567095751004-aa51a2690368?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjB0ZXh0dXJlfGVufDB8fHx8MTc4MDM4OTE1NHww&ixlib=rb-4.1.0&q=85",
+       "description": "Dark blue/gray abstract texture. Use for secondary section backgrounds or behind the bento grid with low opacity (e.g., opacity-10).",
+       "category": "background"
+    },
+    "founder_avatars": [
+      {
+         "url": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxzdGFydHVwJTIwZm91bmRlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDM5NTQ2M3ww&ixlib=rb-4.1.0&q=85",
+         "description": "Founder portrait 1 (Testimonials or Example Roasts)",
+         "category": "avatar"
+      },
+      {
+         "url": "https://images.unsplash.com/photo-1676989880361-091e12efc056?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwzfHxzdGFydHVwJTIwZm91bmRlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDM5NTQ2M3ww&ixlib=rb-4.1.0&q=85",
+         "description": "Founder portrait 2",
+         "category": "avatar"
+      },
+      {
+         "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxzdGFydHVwJTIwZm91bmRlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc4MDM5NTQ2M3ww&ixlib=rb-4.1.0&q=85",
+         "description": "Founder portrait 3",
+         "category": "avatar"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install Phosphor Icons: yarn add @phosphor-icons/react",
+    "Install Framer Motion: yarn add framer-motion",
+    "Ensure all components are built as .jsx or .js files, not .tsx files.",
+    "Use the explicit color hex codes for all custom UI elements.",
+    "Construct the Roast Results page using a CSS Grid (grid-cols-1 md:grid-cols-12) for the bento layout.",
+    "The lead capture wall must sit on top of the roast results with a z-index and heavy backdrop blur, obscuring the data until unlocked.",
+    "Add 'data-testid' to EVERY form input, button, and selectable card."
+  ]
+}
